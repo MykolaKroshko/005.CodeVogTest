@@ -1,0 +1,15 @@
+html{
+  --main-color: #a7d321;
+}
+
+.header{
+  background-color: var(--main-color);
+  color: #fff;
+  font: 12px/26px 'latoregular';
+}
+.headnav{
+  margin: 0;
+}
+.header_link{
+  color:inherit;
+}
