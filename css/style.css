@@ -1,9 +1,5 @@
-html{
-  --main-color: #a7d321;
-}
-
 .header{
-  background-color: var(--main-color);
+  background-color: #a7d321;
   color: #fff;
   font: 12px/26px 'latoregular';
 }
@@ -12,4 +8,29 @@ html{
 }
 .header_link{
   color:inherit;
+}
+svg{
+  width: 100%;
+  height: 100%;
+}
+svg:hover{
+  transform: scale(1.2);
+}
+.socials_svg {
+  fill: #fff;
+}
+.footer{
+  background-color: #2b2b2b;
+  padding: 27px 0;
+}
+.footer_container{
+  display: flex;
+}
+.footer_container_el{
+  border: 1px solid #3e3e3e;
+  min-height: 20px;
+  flex: 1;
+}
+.footer_container_el:not(:last-child){
+  border-right: none;
 }
