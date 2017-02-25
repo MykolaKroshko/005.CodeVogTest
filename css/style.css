@@ -13,7 +13,7 @@ svg{
   width: 100%;
   height: 100%;
 }
-svg:hover{
+a:hover svg{
   transform: scale(1.2);
 }
 .socials_svg {
@@ -21,16 +21,73 @@ svg:hover{
 }
 .footer{
   background-color: #2b2b2b;
+  color: #fff;
+  font-family: 'latobold';
   padding: 27px 0;
 }
-.footer_container{
-  display: flex;
+.footer .copyright{
+  font-size: 16px;
+  line-height: 2;
 }
-.footer_container_el{
-  border: 1px solid #3e3e3e;
-  min-height: 20px;
-  flex: 1;
+.copyright p{
+  font-family: 'latoblack';
 }
-.footer_container_el:not(:last-child){
-  border-right: none;
+.copyright em{
+  font-family: 'latobold_italic';
+}
+.table{
+  margin: 0;
+}
+.table .table_cell{
+  border-color: #3e3e3e;
+  vertical-align: middle;
+  padding: 30px 40px;
+}
+.copyright span{
+  display: inline-block;
+  opacity: .5;
+  font: 14px/24px 'playfair_displayregular';
+}
+.footer_nav{
+  letter-spacing: 3px;
+  margin: 0;
+}
+li.footer_nav_elem{
+  font-size: 12px;
+  line-height: 33px;
+  padding: 0;
+}
+.footer_nav_link{
+  color: inherit;
+}
+.subscribe{
+  padding: 6px 20px;
+  width: 240px;
+  height: initial;
+}
+.subscribe[placeholder]{
+  font: 10px/26px 'latoregular'
+}
+.subscribe_label{
+  font-size: 10px;
+  line-height: 24px;
+  margin-bottom: 13px;
+}
+.footer_socials{
+  min-width: 150px;
+  margin: 0;
+}
+.footer_social_link:not(:last-child){
+  margin-right: 30px;
+}
+.footer_social_link{
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  padding: 8px;
+}
+.footer_socials_svg{
+  vertical-align: top;
 }
