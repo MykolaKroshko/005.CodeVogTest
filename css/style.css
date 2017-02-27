@@ -105,12 +105,12 @@ li.footer_nav_elem{
   min-height: calc(100vh - 26px - 222px);
 }
 .counter,.timePassed{
-  font-family: 'latoregular';
+  font: 10px/32px 'latoregular';
   color: #aaa;
 }
 .counter::before,.timePassed::before{
   content: '';
-  width: 10px;
+  width: 11px;
   height: 10px;
   display: inline-block;
   margin: 0 5px;
@@ -120,6 +120,11 @@ li.footer_nav_elem{
 }
 .timePassed::before{
   background: url('../img/calendar-icon.png') no-repeat center;
+}
+.title{
+  font: 14px/22px 'latobold';
+  color: #333;
+  margin: 0;
 }
 
 /************** News Start **************/
@@ -225,15 +230,32 @@ hr::before{
   padding-bottom: 28px;
   border-bottom: 2px solid #eee;
 }
-.event_title{
-  font: 14px/22px 'latobold';
-  color: #333;
-  margin: 0;
-}
 .event_author{
-  margin-bottom: 15px;
-  margin-top: 3px;
+  margin-bottom: 10px;
 }
+
 /************** Announce End **************/
 
 /************************ CONTENT END ************************/
+
+/************************ SIDEBAR START ************************/
+
+.sidebar{
+  padding: 0;
+}
+.topNews{
+  border: 1px solid #e2e2e2;
+  padding: 23px;
+}
+.topNews_news{
+  border-bottom: 1px solid #eee;
+  padding: 0 4px 10px 4px;
+}
+.topNews_title{
+  margin-top: 20px;
+}
+.info{
+  margin-left: -4px;
+  margin-top: 5px;
+}
+/************************ SIDEBAR END ************************/
