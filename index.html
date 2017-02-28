@@ -66,12 +66,34 @@
       </div>
     </header>
     <div class="container containerMain">
-      <header class="row">
-        <div class="logo"></div>
-        <div class="mainNav"></div>
-        <div class="search"></div>
+      <header class="clearfix contentHeader">
+        <div class="logo col-lg-3">
+          <a class="logo_link" href="index.html">
+            <img src="img/logo.png" alt="logo with olives and leaves">
+            <span class="logo_olive text-uppercase">Olive</span>
+            <span class="logo_magazine text-uppercase">Magazine</span>
+          </a>
+        </div>
+        <div class="mainNav col-lg-6">
+          <div class="row">
+            <ul class="mainNav_list text-uppercase list-inline">
+              <li class="mainNav_item"><a href="#">olive world</a></li>
+              <li class="mainNav_item"><a href="#">health</a></li>
+              <li class="mainNav_item"><a href="#">beauty</a></li>
+              <li class="mainNav_item"><a href="#">oil</a></li>
+              <li class="mainNav_item"><a href="#">community</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="search col-lg-3">
+          <form action="#" method="get" class="search_form row">
+            <input type="checkbox" name="showSaerch" id="showSaerch" class="showSaerch">
+            <label for="showSaerch" class="search_icon glyphicon glyphicon-search"></label>
+            <input type="text" class="search_input" name="search" placeholder="Search">
+          </form>
+        </div>
       </header>
-      <div class="content">
+      <div class="content clearfix">
         <main class="col-lg-9">
           <section>
             <div class="slider col-lg-8">
