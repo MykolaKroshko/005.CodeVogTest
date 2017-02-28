@@ -1,9 +1,12 @@
 /************************ HEADER START ************************/
 
 .header{
-  background-color: #a7d321;
   color: #fff;
   font: 12px/26px 'latoregular';
+  border-bottom: 1px solid #e2e2e2;
+}
+.header_top{
+  background-color: #a7d321;
 }
 .headnav{
   margin: 0;
@@ -242,8 +245,9 @@ hr::before{
 
 /************** Navigation Start **************/
 
-.contentHeader{
-  padding: 20px 0;
+.header_bottom{
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .logo{
   font-size: 18px;
