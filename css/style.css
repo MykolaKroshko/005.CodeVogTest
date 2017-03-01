@@ -177,14 +177,11 @@ hr::before{
   flex:1;
   font: 13px/22px 'playfair_displayregular';
 }
-.news_article_header{
-  font-size: 10px;
-  line-height: 32px;
-}
 .sectionTitle{
-  font-family: 'latobold';
+  font: 10px/32px 'latobold';
   letter-spacing: 2px;
   color: #007fff;
+  text-transform: uppercase;
 }
 .sectionTitle:hover a{
   text-decoration: none;
@@ -312,6 +309,9 @@ li.mainNav_item{
 
 /************** Pre-views Start **************/
 
+.pad-r-0{
+  padding-right: 0;
+}
 .carousel-inner{
   height: 350px;
 }
@@ -359,6 +359,34 @@ li.mainNav_item{
 .carousel-control.left{
   left: 50px;
 }
+.item{
+  height: 100%;
+}
+.slide_image{
+  margin: auto;
+  vertical-align: middle;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.pre-view{
+  height: 350px;
+}
+.pre_view_1_imageConainer{
+  height: 230px;
+  background: url('../img/3.jpg') no-repeat center;
+}
+.pre_view_1_text{
+  height: calc(100% - 230px);
+  border: 1px solid #e2e2e2;
+  border-top: none;
+  padding: 20px;
+}
+.pre_view_1_title{
+  font: 14px/22px 'latobold';
+  color: #333;
+}
+
 /************** Pre-views End **************/
 
 /************************ CONTENT END ************************/
