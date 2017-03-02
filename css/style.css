@@ -8,9 +8,6 @@
 .header_top{
   background-color: #a7d321;
 }
-.headnav{
-  margin: 0;
-}
 .header_link {
     display: inline-block;
     height: 14px;
@@ -27,6 +24,21 @@ svg{
 }
 .socials_svg {
   fill: #fff;
+}
+@media (max-width: 767px){
+  .search{
+    max-width: 400px;
+    margin: auto;
+  }
+  .search_form {
+    margin: 0;
+  }
+  .mainNav>div{
+    margin: 0;
+  }
+  .mainNav_list {
+    text-align: center;
+  }
 }
 
 /************************ HEADER END ************************/
@@ -103,12 +115,41 @@ li.footer_nav_elem{
 .footer_socials_svg{
   vertical-align: top;
 }
-@media (min-width: 992px){
+@media (max-width: 1199px){
   .table .table_cell{
     padding: 20px;
   }
   .subscribe{
     width: 200px;
+  }
+}
+@media (max-width: 991px){
+  .table .table_cell{
+    padding: 10px;
+  }
+  .footer_social_link:not(:last-child) {
+      margin-right: 10px;
+  }
+  .footer_nav{
+    text-align: center;
+  }
+  li.footer_nav_elem{
+    line-height: 21px;
+  }
+  .footer_socials {
+    min-width: 110px;
+  }
+  .subscribe {
+    padding: 0 10px;
+    width: 170px;
+  }
+}
+@media (max-width: 767px){
+  .footer{
+    text-align: center;
+  }
+  .footer_social_link{
+    display: inline-block;
   }
 }
 
@@ -156,6 +197,11 @@ li.footer_nav_elem{
   display: block;
   clear: both;
 }
+@media (max-width: 767px){
+  .containerMain{
+    margin-top: 0;
+  }
+}
 /************** News Start **************/
 
 .sectionDevider{
@@ -164,7 +210,6 @@ li.footer_nav_elem{
   margin-bottom: 80px;
 }
 .sectionDevider::before{
-  content: 'latest news';
   padding: 7px 15px;
   display: inline-block;
   background-color: #eee;
@@ -172,6 +217,9 @@ li.footer_nav_elem{
   font: 10px/26px 'latobold';
   color: #333;
   letter-spacing: 2px;
+}
+.sectionDevider_news::before{
+  content: 'latest news';
 }
 .news_article{
   margin-bottom: 30px;
@@ -224,7 +272,7 @@ li.footer_nav_elem{
 .author_name{
   color: #333;
 }
-@media (min-width: 992px){
+@media (max-width: 1199px){
   .news_article{
     margin-bottom: 20px;
   }
@@ -237,6 +285,9 @@ li.footer_nav_elem{
 
 /************** Announce Start **************/
 
+.sectionDevider_announce::before{
+  content: 'Announcing'
+}
 .announce{
   padding-top: 20px;
 }
@@ -266,6 +317,31 @@ li.footer_nav_elem{
 }
 .event_author{
   margin-bottom: 10px;
+}
+@media (max-width: 991px){
+  .events_container:first-child {
+    margin-right: 40px;
+  }
+}
+@media (max-width: 767px){
+  .announce{
+    padding: 0;
+  }
+  .announce_events{
+    display: block;
+    padding: 0;
+  }
+  .events_container:first-child {
+    margin-right: 0;
+  }
+  .events_container{
+    width: 100%;
+  }
+  .event.event{
+    padding: 0;
+    border: none;
+    margin-bottom: 15px;
+  }
 }
 
 /************** Announce End **************/
@@ -332,6 +408,11 @@ li.mainNav_item{
 }
 .showSaerch:checked~.search_icon{
   color: #ccc;
+}
+@media (max-width: 991px){
+  li.mainNav_item{
+    padding: 0 5px;
+  }
 }
 
 /************** Navigation End **************/
@@ -509,7 +590,7 @@ li.mainNav_item{
 .pre_view_4 .sectionTitle{
   color: #fff;
 }
-@media (min-width: 992px){
+@media (max-width: 1199px){
   .carousel-inner,.pre-view{
     height: 300px;
   }
@@ -611,7 +692,7 @@ li.mainNav_item{
 .bestOils:hover{
   transform: none;
 }
-@media (min-width: 992px){
+@media (max-width: 1199px){
   .topNews{
     padding: 15px;
     padding-top: 50px;
