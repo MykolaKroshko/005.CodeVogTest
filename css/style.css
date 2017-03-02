@@ -151,6 +151,11 @@ li.footer_nav_elem{
   .footer_social_link{
     display: inline-block;
   }
+  .subscribe{
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+  }
 }
 
 /************************ FOOTER END ************************/
