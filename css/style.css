@@ -125,6 +125,15 @@ li.footer_nav_elem{
 .timePassed::before{
   background: url('../img/calendar-icon.png') no-repeat center;
 }
+.counter_white,.timePassed_white{
+  color: #fff;
+}
+.counter_white::before{
+  background-image: url(../img/white-flag-icon.png);
+}
+.timePassed_white::before{
+  background-image: url(../img/white-calendar-icon.png);
+}
 .title{
   font: 14px/22px 'latobold';
   color: #333;
@@ -329,11 +338,13 @@ li.mainNav_item{
   width: 6px;
   height: 6px;
   margin: 5px;
+  box-shadow: 0 1px 2px rgba(0,0,0,.6);
 }
 .carousel-indicators .active{
   width: 6px;
   height: 6px;
   margin: 5px;
+  background-color: #bbb;
 }
 .carousel-control{
   bottom: 13px;
@@ -369,6 +380,21 @@ li.mainNav_item{
   top: 50%;
   transform: translateY(-50%);
 }
+.carousel-caption{
+  top: 0;
+  left: 0;
+  right: initial;
+  bottom: initial;
+  width: 100%;
+  height: 100%;
+  padding: 80px 100px;
+  text-align: left;
+  background-color: rgba(0,0,0,.3);
+}
+.carousel_title{
+  font: 30px/40px 'latobold';
+  margin: 0;
+}
 
 .pre-view_container .sectionTitle{
   color: #a7d321;
@@ -382,19 +408,27 @@ li.mainNav_item{
 .pre-view{
   height: 350px;
 }
+.pre_view_text_1{
+  border: 1px solid #e2e2e2;
+  border-top: none;
+  padding: 20px;
+}
+.pre_view_title_1{
+  font: 14px/22px 'latobold';
+  color: #333;
+  margin: 0;
+}
+.pre_view_title_2{
+  font: 24px/32px 'latobold';
+  margin-top: 36px;
+  margin-bottom: 22px;
+}
 .pre_view_1_imageConainer{
   height: 230px;
   background: url('../img/3.jpg') no-repeat center;
 }
 .pre_view_1_text{
   height: calc(100% - 230px);
-  border: 1px solid #e2e2e2;
-  border-top: none;
-  padding: 20px;
-}
-.pre_view_1_title{
-  font: 14px/22px 'latobold';
-  color: #333;
 }
 .pre_view_2{
   display: block;
@@ -424,16 +458,38 @@ li.mainNav_item{
   width: 22px;
   margin: 0 auto;
 }
-.pre_view_2_title{
-  font: 24px/32px 'latobold';
-  margin-top: 36px;
-  margin-bottom: 22px;
-}
 .pre_view_2_description{
   font: 14px/22px 'playfair_displayregular';
   color: #d9d9d9;
-  margin-bottom: 50px; 
+  margin-bottom: 50px;
 }
+.pre_view_3_imageConainer{
+  height: 155px;
+  background: url('../img/6.jpg') no-repeat center;
+}
+.pre_view_3_text{
+  height: calc(100% - 155px);
+}
+.pre_view_3_description{
+  font: 13px/22px 'playfair_displayregular';
+  color: #999;
+  margin-top: 12px;
+}
+.pre_view_4{
+  color: #fff;
+  background-color: #a7d321;
+  text-align: center;
+  padding: 20px 30px;
+  height: 100%;
+}
+.pre_view_4_description{
+  font: 14px/22px 'playfair_displayregular';
+  margin-bottom: 30px;
+}
+.pre_view_4 .sectionTitle{
+  color: #fff;
+}
+
 /************** Pre-views End **************/
 
 /************************ CONTENT END ************************/
