@@ -11,6 +11,10 @@
 .headnav{
   margin: 0;
 }
+.header_link {
+    display: inline-block;
+    height: 14px;
+}
 a, a:focus, a:hover{
   color: inherit;
 }
@@ -98,6 +102,14 @@ li.footer_nav_elem{
 }
 .footer_socials_svg{
   vertical-align: top;
+}
+@media (min-width: 992px){
+  .table .table_cell{
+    padding: 20px;
+  }
+  .subscribe{
+    width: 200px;
+  }
 }
 
 /************************ FOOTER END ************************/
@@ -212,7 +224,15 @@ li.footer_nav_elem{
 .author_name{
   color: #333;
 }
-
+@media (min-width: 992px){
+  .news_article{
+    margin-bottom: 20px;
+  }
+  .news_image{
+    width: 300px;
+    margin-right: 20px;
+  }
+}
 /************** News End **************/
 
 /************** Announce Start **************/
@@ -318,7 +338,7 @@ li.mainNav_item{
 
 /************** Pre-views Start **************/
 
-.pad-r-0{
+.pre-view_container>div:not(:nth-last-child(3n+1)){
   padding-right: 0;
 }
 .carousel-inner{
@@ -489,6 +509,41 @@ li.mainNav_item{
 .pre_view_4 .sectionTitle{
   color: #fff;
 }
+@media (min-width: 992px){
+  .carousel-inner,.pre-view{
+    height: 300px;
+  }
+  .carousel-caption{
+    padding: 50px 70px;
+  }
+  .pre_view_1_imageConainer{
+    height: 190px;
+  }
+  .pre_view_text_1 {
+    padding: 12px;
+  }
+  .pre_view_1_text{
+    height: calc(100% - 190px);
+  }
+  .pre_view_title_2{
+    margin: 15px 0;
+  }
+  .pre_view_2_description{
+    margin-bottom: 30px;
+  }
+  .pre_view_3_imageConainer{
+    height: 125px;
+  }
+  .pre_view_3_text{
+    height: calc(100% - 125px);
+  }
+  .pre_view_4{
+    padding: 15px;
+  }
+  .pre_view_4_description{
+    margin-bottom: 10px;
+  }
+}
 
 /************** Pre-views End **************/
 
@@ -535,6 +590,8 @@ li.mainNav_item{
 .sidebar_image{
   margin: auto;
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 .facebookPlagin{
   margin-top: 20px;
@@ -553,7 +610,16 @@ li.mainNav_item{
 }
 .bestOils:hover{
   transform: none;
-
 }
+@media (min-width: 992px){
+  .topNews{
+    padding: 15px;
+    padding-top: 50px;
+  }
+  .topNews::before{
+    top: 15px;
+  }
+}
+
 
 /************************ SIDEBAR END ************************/
