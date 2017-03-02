@@ -213,6 +213,7 @@ li.footer_nav_elem{
   border-top-width: 2px;
   margin-top: 25px;
   margin-bottom: 80px;
+  position: relative;
 }
 .sectionDevider::before{
   padding: 7px 15px;
@@ -222,6 +223,8 @@ li.footer_nav_elem{
   font: 10px/26px 'latobold';
   color: #333;
   letter-spacing: 2px;
+  position: absolute;
+  left: 0;
 }
 .sectionDevider_news::before{
   content: 'latest news';
