@@ -6,14 +6,14 @@
   border-bottom: 1px solid #e2e2e2;
 }
 .headnav{
-    margin: 0;
+  margin: 0;
 }
 .header_top{
   background-color: #a7d321;
 }
 .header_link {
-    display: inline-block;
-    height: 14px;
+  display: inline-block;
+  height: 14px;
 }
 a, a:focus, a:hover{
   color: inherit;
@@ -29,6 +29,9 @@ svg{
   fill: #fff;
 }
 @media (max-width: 767px){
+  .headnav{
+    text-align: center;
+  }
   .search{
     max-width: 400px;
     margin: auto;
@@ -177,7 +180,7 @@ li.footer_nav_elem{
   margin-left: 10px;
 }
 .counter::before,.timePassed::before{
-content: '';
+  content: '';
   width: 11px;
   height: 10px;
   top: 50%;
