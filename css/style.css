@@ -5,6 +5,9 @@
   font: 12px/26px 'latoregular';
   border-bottom: 1px solid #e2e2e2;
 }
+.headnav{
+    margin: 0;
+}
 .header_top{
   background-color: #a7d321;
 }
@@ -169,13 +172,18 @@ li.footer_nav_elem{
 .counter,.timePassed{
   font: 10px/32px 'latoregular';
   color: #aaa;
+  position: relative;
+  padding: 0 5px;
+  margin-left: 10px;
 }
 .counter::before,.timePassed::before{
-  content: '';
+content: '';
   width: 11px;
   height: 10px;
-  display: inline-block;
-  margin: 0 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  right: 100%;
 }
 .counter::before{
   background: url('../img/flag-icon.png') no-repeat center;
@@ -279,6 +287,7 @@ li.footer_nav_elem{
 }
 .author_name{
   color: #333;
+  margin-right: 5px;
 }
 @media (max-width: 1199px){
   .news_article{
@@ -673,7 +682,6 @@ li.mainNav_item{
   margin-top: 20px;
 }
 .info{
-  margin-left: -4px;
   margin-top: 5px;
 }
 .sidebar_image{
