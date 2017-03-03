@@ -317,21 +317,23 @@ li.footer_nav_elem{
 .announce_events{
   padding: 50px 0;
   display: flex;
-}
-.events_container{
-  width: 50%;
-}
-.events_container:first-child{
-  margin-right: 70px;
+  flex-wrap: wrap;
 }
 .event{
   font: 13px/22px 'playfair_displayregular';
   color: #999;
+  width: calc(50% - 35px);
 }
-.event:not(:first-child){
+.event:nth-child(2n){
+  margin-left: 35px;
+}
+.event:nth-child(2n+1){
+  margin-right: 35px;
+}
+.event:nth-child(n+3){
   padding-top: 28px;
 }
-.event:not(:last-child){
+.event:nth-last-child(n+3){
   padding-bottom: 28px;
   border-bottom: 2px solid #eee;
 }
@@ -339,8 +341,14 @@ li.footer_nav_elem{
   margin-bottom: 10px;
 }
 @media (max-width: 991px){
-  .events_container:first-child {
-    margin-right: 40px;
+  .event{
+    width: calc(50% - 20px);
+  }
+  .event:nth-child(2n){
+    margin-left: 20px;
+  }
+  .event:nth-child(2n+1){
+    margin-right: 20px;
   }
 }
 @media (max-width: 767px){
@@ -351,16 +359,14 @@ li.footer_nav_elem{
     display: block;
     padding: 0;
   }
-  .events_container:first-child {
-    margin-right: 0;
-  }
-  .events_container{
+  .event{
     width: 100%;
   }
-  .event.event{
+  .event:nth-child(2n),.event:nth-child(2n+1){
+    margin:0;
     padding: 0;
     border: none;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
   }
 }
 
