@@ -301,6 +301,19 @@ li.footer_nav_elem{
     margin-right: 20px;
   }
 }
+@media (max-width: 767px){
+  .news_article{
+    flex-direction: column;
+  }
+  .news_image{
+    width: 48vmax;
+    height: 27vmax;
+    margin: auto;
+  }
+  .news_text{
+  }
+}
+
 /************** News End **************/
 
 /************** Announce Start **************/
